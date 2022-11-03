@@ -1,0 +1,32 @@
+package ranjeet;
+import java.util.Scanner;
+public class arm_demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		demo();
+	}
+	public static void demo()
+	{
+		int num,s=0,r;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		num=sc.nextInt();
+		int num1=num;
+		do
+		{
+			r=num%10;
+			s=s+(r*r*r);
+			num=num/10;
+		}
+		while(num>0);
+		
+		if(num1==s)
+		{
+			System.out.println("It Is An Armstrong Number");
+		}
+		else
+		{
+			System.out.println("It Is An Not Armstrong Number"+s);
+		}
+	}
