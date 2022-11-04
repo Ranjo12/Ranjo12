@@ -1,0 +1,28 @@
+/* Q3_a)Write a program to display the following pattern
+*********
+ *******
+  *****
+   ***
+    *
+ */   
+    
+    package Ranjeet;
+
+public class triangle_star{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+demo(); //call method
+	}
+	public static void demo()
+	{
+		int i,j;
+		for(i=5;i>=1;i--)  //loop for print row value
+		{
+			for(j=1;j<=i*2-1;j++)  //loop for print column value
+			{
+				System.out.print("*");  //print *
+			}
+			System.out.println();
+		}
+	}
