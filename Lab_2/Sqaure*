@@ -1,0 +1,30 @@
+/* Write a program to display the following pattern
+*****
+*   *
+*   *
+*****
+*/
+
+package Ranjeet;
+
+public class sqaure {
+	public static void main(String[]args) {
+		int i,j;
+		for(i=0;i<5;i++) //loop for print row value
+		{
+			for(j=0;j<5;j++)//loop for print column value
+			{
+				if(i==0||i==4||j==0||j==4)//condition for row and column value
+				{
+					System.out.print("*"); //print *
+				}
+			
+					
+					else {
+						System.out.print(" "); // print space
+					}
+				}
+				System.out.println();
+			}
+		}
+	}
