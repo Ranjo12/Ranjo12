@@ -61,7 +61,6 @@ public class ATM_Machine {
 	            case 4:
 	                System.exit(0);
 		}
-		
 	}
 }
 }
