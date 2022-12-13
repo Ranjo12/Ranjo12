@@ -1,0 +1,64 @@
+/* write a program to enter employees details and calculate gross salary and net salary by using inheritance
+*/
+
+package ranjeet;
+import java.util.*;
+public class employee {
+	String name;
+	int id;
+	long contectno;
+	int grosssalary,netsalary;
+	String emailid;
+	int ctc;
+	
+	Scanner sc=new Scanner(System.in);// for user input
+public void accept() {
+	System.out.println("Enter your name:");// user enter employee name
+	name=sc.next();
+	System.out.println("Enter your employee id:"); // user enter employee id 
+     id=sc.nextInt();
+	System.out.println("Enter your contect number: "); //user enter  number
+	contectno=sc.nextLong();
+	System.out.println("Enter your email id:"); // user enter employee email id
+	emailid=sc.next();
+	System.out.println("Enter your gross salary:"); //user enter gross salary 
+	grosssalary=sc.nextInt();
+	
+		
+	
+}
+}
+
+-------
+package Dipanshu;
+
+public class calculation extends employee{ // we are inheriting employee class in calculation 
+
+	
+	
+	
+public void calc() { //creating a function
+	accept(); // calling a function of employee class
+	
+	 System.out.println("your gross salary is:"+grosssalary);
+	 int ctc=(grosssalary/100)*25; // calculating ctc
+	 netsalary=grosssalary-ctc; // formula to calculate netsalary
+	 System.out.println("Your net salary is:"+netsalary); // print net salary
+}
+}
+
+----
+package Dipanshu;
+
+public class employeemain extends calculation {
+
+	public static void main(String[] args) {
+		
+		employeemain obj=new employeemain(); // creating a object for calling fuction
+         obj.calc();
+		
+
+	}
+
+
+}
