@@ -6,7 +6,7 @@ Area of cylendar((π*r*r)*h)
 Area of Square (s*s)
 */
 
-package Surya;
+package ranjeet;
 
 import java.util.Scanner; //Svanner
 
